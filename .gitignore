@@ -1,0 +1,29 @@
+# iOS 
+.DS_Store
+xcuserdata/
+xcshareddata/
+
+# Python
+*.pyc
+
+Server/Spider/zen/items.json
+
+Hupu/HuPuDemo/HuPuDemo.xcodeproj/project.xcworkspace/xcshareddata/HuPuDemo.xccheckout
+
+# built application files
+*.apk
+*.ap_
+
+# files for the dex VM
+*.dex
+
+# Java class files
+*.class
+
+# generated files
+bin/
+gen/
+
+# Local configuration file (sdk path, etc)
+local.properties
+
