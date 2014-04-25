@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:orientation="vertical" >
+
+    <View
+        android:id="@+id/zen_edit_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#99000000"
+        android:clickable="true" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@drawable/zen_background"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:paddingBottom="10dp"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:paddingTop="10dp" >
+
+        <Button
+            android:id="@+id/zen_send_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/zen_send_btn"
+            />
+
+        <!-- <ImageButton
+            android:contentDescription="@null"
+            android:id="@+id/zen_add_photo"
+            android:layout_width="41dp"
+            android:layout_height="41dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:scaleType="centerCrop"
+            android:background="@drawable/add_picture"
+             /> -->
+
+        <EditText
+            android:id="@+id/zen_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_toLeftOf="@+id/zen_send_btn"
+            android:background="@drawable/edittext_bg"
+            android:imeOptions="actionUnspecified"
+            android:inputType="textMultiLine"
+            android:maxHeight="90dp"
+            android:padding="8dp"
+            android:scrollbarStyle="insideInset"
+            android:scrollbars="vertical"
+            android:singleLine="false"
+            android:textSize="16sp" >
+        </EditText>
+    </RelativeLayout>
+
+</FrameLayout>

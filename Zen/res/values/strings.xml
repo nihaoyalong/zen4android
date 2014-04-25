@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">虎扑体育</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+	<string name="threads_title">Threads</string>
+	<string name="zen_light">点亮</string>
+	<string name="zen_reply">引用</string>
+	<string name="zen_copy">复制</string>
+	<string name="zen_pm">PM</string>
+	<string name="zen_username">用户名</string>
+	<string name="zen_username_hint">请输入用户名</string>
+	<string name="zen_password">密码</string>
+	<string name="zen_password_hint">请输入密码</string>
+	<string name="zen_login">登录</string>
+	<string name="zen_loading">正在加载…</string>
+	<string name="zen_input_title">请输入标题</string>
+	<string name="zen_input_content">请输入帖子内容</string>
+	<string name="zen_new_post">发新帖</string>
+	<string name="zen_notification">半场提醒</string>
+	<string name="zen_send_post">发送帖子</string>
+	<string name="zen_done">done</string>
+	<string name="zen_not_logedin">未登录</string>
+	<string name="zen_logout">注销</string>
+	<string name="zen_picker_cancel">取消</string>
+	<string name="zen_picker_end">末页</string>
+	<string name="zen_picker_jump">跳转</string>
+	<string name="zen_save">保存图片</string>
+	<string name="zen_refresh">刷新</string>
+	<string name="zen_feedback">反馈</string>
+</resources>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/zen_browser_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff"
+        android:gravity="center_vertical" >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="3"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/zen_browser_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/normal_btn"
+                android:contentDescription="@null"
+                android:onClick="OnBottomItemClick"
+                android:padding="4dp"
+                android:src="@drawable/webview_back" />
+
+            <ImageButton
+                android:id="@+id/zen_browser_prev"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/normal_btn"
+                android:contentDescription="@null"
+                android:onClick="OnBottomItemClick"
+                android:padding="4dp"
+                android:src="@drawable/webview_previous" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_weight="3"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/zen_browser_forward"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/normal_btn"
+                android:contentDescription="@null"
+                android:gravity="center"
+                android:onClick="OnBottomItemClick"
+                android:padding="4dp"
+                android:src="@drawable/webview_forward" />
+
+            <ImageButton
+                android:id="@+id/zen_browser_refresh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/normal_btn"
+                android:contentDescription="@null"
+                android:onClick="OnBottomItemClick"
+                android:padding="4dp"
+                android:src="@drawable/webview_refresh" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/zen_browser_border"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@id/zen_browser_bottom"
+        android:background="@drawable/zen_border_color" />
+    
+     <WebView
+        android:id="@+id/zen_browser_webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_above="@id/zen_browser_border"
+        android:background="#00000000"
+        android:cacheColorHint="#00000000"
+        android:fastScrollEnabled="false"
+        android:overScrollMode="never"
+        android:smoothScrollbar="true" />
+
+</RelativeLayout>

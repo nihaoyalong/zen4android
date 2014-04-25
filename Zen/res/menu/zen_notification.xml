@@ -1,0 +1,28 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/zen_feedback"
+        android:icon="@drawable/action_feedback"
+        android:showAsAction="always"
+        android:title="@string/zen_feedback"
+        android:titleCondensed="@string/zen_feedback"
+        android:visible="true">
+    </item>
+    <item
+        android:id="@+id/zen_logout"
+        android:icon="@drawable/action_logout"
+        android:showAsAction="always"
+        android:title="@string/zen_logout"
+        android:titleCondensed="@string/zen_logout"
+        android:visible="true">
+    </item>
+    <item
+        android:id="@+id/zen_refresh"
+        android:icon="@drawable/action_refresh"
+        android:showAsAction="always"
+        android:title="@string/zen_refresh"
+        android:titleCondensed="@string/zen_refresh"
+        android:visible="true">
+    </item>
+
+</menu>

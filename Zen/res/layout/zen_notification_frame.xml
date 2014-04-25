@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/zen_notification_header"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_alignParentTop="true"
+        android:gravity="center_horizontal"
+        android:background="@drawable/navy"
+        android:orientation="vertical" >
+        <ImageView 
+            android:id="@+id/zen_notification_user"
+            android:contentDescription="@null"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/user_avatar"
+            android:clickable="true"
+            />
+        <TextView 
+            android:id="@+id/zen_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textSize="16sp"
+            android:textColor="#fff"
+            android:text="@string/zen_not_logedin" />
+    </LinearLayout>
+	<ListView
+	    android:id="@+id/zen_notification_list"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_below="@id/zen_notification_header"
+	    android:listSelector="#00000000"
+	    android:background="#00000000"
+	    android:cacheColorHint="#00000000"
+	    android:divider="#e0e0e0"
+        android:dividerHeight="1dp"
+	   />
+</RelativeLayout>

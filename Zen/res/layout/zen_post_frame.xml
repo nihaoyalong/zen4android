@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/zen_background"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/zen_post_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:padding="6dp"
+        android:hint="@string/zen_input_title"
+        android:textSize="18sp"
+        android:background="@drawable/edittext_bg_focused"
+        android:imeOptions="actionNone"
+        android:inputType="text"
+        android:singleLine="true" >
+    </EditText>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/zen_post_content"
+            android:layout_width="match_parent"
+            android:layout_height="137dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="10dp"
+            android:padding="6dp"
+            android:gravity="top"
+            android:layout_toLeftOf="@+id/zen_choose_image"
+            android:background="@drawable/edittext_bg_focused"
+            android:hint="@string/zen_input_content"
+            android:scrollbars="vertical"
+            android:scrollbarStyle="insideInset"
+            android:singleLine="false"
+            android:textSize="15sp"
+            android:inputType="textMultiLine"
+            android:imeOptions="actionUnspecified" />
+
+        <ImageButton
+            android:contentDescription="@null"
+            android:id="@+id/zen_choose_image"
+            android:layout_width="68dp"
+            android:layout_height="68dp"
+            android:scaleType="centerCrop"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/zen_post_content"
+            android:background="@drawable/zen_item_selector"
+            android:src="@drawable/album_add"
+            android:onClick="OnSelectImages" />
+
+    </RelativeLayout>
+
+</LinearLayout>

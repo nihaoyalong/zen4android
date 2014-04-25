@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >	
+    <com.handmark.pulltorefresh.library.PullToRefreshWebView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/zen_content_webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:smoothScrollbar="true"
+        android:background="#00000000"
+        android:cacheColorHint="#00000000"
+        android:fastScrollEnabled="false"
+        android:overScrollMode="never"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="40dp"
+        ptr:ptrMode="both"
+        ptr:ptrHeaderBackground="#ffffff"
+        ptr:ptrHeaderTextColor="#000000" />
+
+    <LinearLayout
+        android:id="@+id/zen_bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff"
+        android:gravity="center_vertical" >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1.5"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:contentDescription="@null"
+                android:id="@+id/zen_back_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/normal_btn"
+                android:src="@drawable/bottom_back"
+                android:onClick="OnBottomItemClick" />
+
+            <ImageButton
+                android:contentDescription="@null"
+                android:id="@+id/zen_prev_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/normal_btn"
+                android:src="@drawable/bottom_prev"
+                android:onClick="OnBottomItemClick" />
+        </RelativeLayout>
+		<TextView
+		    android:id="@+id/zen_counter"
+		    android:layout_width="0dp" 
+		    android:layout_height="match_parent"
+		    android:gravity="center"
+		    android:layout_weight="1"
+		    android:textColor="#000"
+		    android:textSize="13sp"
+		    android:clickable="true"
+		    android:focusable="true"
+		    android:focusableInTouchMode="true"
+		    android:onClick="OnBottomItemClick" />
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_weight="1.5"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:contentDescription="@null"
+                android:id="@+id/zen_next_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:layout_alignParentLeft="true"
+                android:gravity="center"
+                android:background="@drawable/normal_btn"
+                android:src="@drawable/bottom_next"
+                android:onClick="OnBottomItemClick" />
+
+            <ImageButton
+                android:contentDescription="@null"
+                android:id="@+id/zen_more_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/normal_btn"
+                android:src="@drawable/bottom_more"
+                android:onClick="OnBottomItemClick" />
+        </RelativeLayout>
+    </LinearLayout>
+	<View 
+	    android:layout_above="@id/zen_bottom_bar"
+	    android:layout_width="match_parent"
+	    android:layout_height="1dp"
+	    android:background="@drawable/zen_border_color" />
+</RelativeLayout>

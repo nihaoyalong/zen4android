@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/zen_send_post"
+        android:icon="@drawable/send_post"
+        android:showAsAction="always"
+        android:title="@string/zen_send_post"
+        android:titleCondensed="@string/zen_send_post"
+        android:visible="true">
+    </item>
+
+</menu>

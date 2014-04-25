@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ZenTheme.Light" parent="android:Theme.Light">
+        <item name="numberPickerStyle">@style/NPWidget.Holo.Light.NumberPicker</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="ZenCheckBox" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/zen_checkbox_selector</item>
+    </style>
+	<style name="Widget.GifMoviewView" parent="@android:style/Widget"></style>
+</resources>

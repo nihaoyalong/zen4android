@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000" >
+
+    <LinearLayout
+        android:id="@+id/zen_picker_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="40dp"
+        android:background="#99000000"
+        android:orientation="vertical" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:id="@+id/zen_picker_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true" >
+
+            <View
+                android:id="@+id/zen_picker_top_border"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/zen_border_color" />
+
+            <RelativeLayout
+                android:layout_below="@id/zen_picker_top_border"
+                android:id="@+id/zen_picker_opt_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/zen_background"
+                android:gravity="center_vertical"
+                android:paddingBottom="4dp"
+                android:paddingTop="4dp" >
+
+                <Button
+                    android:id="@+id/zen_picker_cancel"
+                    android:layout_width="48dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/red_btn"
+                    android:gravity="center"
+                    android:text="@string/zen_picker_cancel"
+                    android:textColor="#fff"
+                    android:textSize="15sp" />
+				<Button
+                    android:id="@+id/zen_picker_end"
+                    android:layout_width="48dp"
+                    android:layout_height="30dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/purple_btn"
+                    android:gravity="center"
+                    android:text="@string/zen_picker_end"
+                    android:textColor="#fff"
+                    android:textSize="15sp" />
+				
+                <Button
+                    android:id="@+id/zen_picker_jump"
+                    android:layout_width="48dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/real_blue_btn"
+                    android:gravity="center"
+                    android:text="@string/zen_picker_jump"
+                    android:textColor="#fff"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/zen_picker_bottom_border"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/zen_picker_opt_container"
+                android:background="@drawable/zen_border_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/zen_picker_bottom_border"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <net.simonvt.numberpicker.NumberPicker
+                    android:id="@+id/zen_picker"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/zen_background" />
+
+                <View
+                    android:id="@+id/zen_picker_mask"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="#00000000" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</FrameLayout>

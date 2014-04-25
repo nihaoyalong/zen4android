@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/zen_done"
+        android:icon="@drawable/action_done"
+        android:showAsAction="always"
+        android:title="@string/zen_done"
+        android:titleCondensed="@string/zen_done"
+        android:visible="true">
+    </item>
+
+</menu>

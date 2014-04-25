@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/zen_background"
+    android:orientation="horizontal" >
+    <ImageButton 
+        android:contentDescription="@null"
+        android:id="@+id/zen_menu_header_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:width="44dp"
+        android:height="44dp"
+        android:src="@drawable/menu_right_arrow"
+		android:background="@drawable/mid_green_btn"
+        />     
+    <Button 
+        android:id="@+id/zen_menu_header_right"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:height="44dp"
+        android:textColor="#ffffff"
+        android:background="@drawable/mid_green_btn"
+        android:textSize="18sp"
+        />
+
+</LinearLayout>
